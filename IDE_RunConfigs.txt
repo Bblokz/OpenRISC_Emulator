@@ -1,0 +1,30 @@
+﻿-t ../tests/add.conf
+-t ../tests/load.conf
+-t ../tests/store.conf
+-t ../tests/sub.conf
+-t ../tests/jal.conf
+-d -t ../tests/sfles.conf
+
+-t ../tests/adddatahazard.conf
+
+-t  ../tests/add.conf -p
+
+-X ../tests/tests.txt
+
+../lab2-test-programs-2022/basic.bin
+../lab2-test-programs-2022/hellonods.bin
+../lab2-test-programs-2022/hello.bin
+../lab2-test-programs-2022/comp.bin
+../lab2-test-programs-2022/comp4.bin
+../lab2-test-programs-2022/hello4.bin
+
+
+python test_output.py -C ./lab2-test-programs-2022/ -v
+-p ../lab2-test-programs-2022/hellonods.bin
+
+-p ../lab2-test-programs-2022/basic.bin
+-p ../lab2-test-programs-2022/hellonods.bin
+-p ../lab2-test-programs-2022/hello.bin
+-p ../lab2-test-programs-2022/comp.bin
+-p ../lab2-test-programs-2022/comp4.bin
+-p ../lab2-test-programs-2022/hello4.bin
